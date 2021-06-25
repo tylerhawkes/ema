@@ -1,6 +1,6 @@
 [package]
 name = "ema"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Tyler Hawkes <tyler.hawkes@gmail.com>"]
 edition = "2018"
 description = "Library for using exponential moving averages"
@@ -9,7 +9,7 @@ repository = "https://github.com/tylerhawkes/ema"
 documentation = "https://docs.rs/ema"
 readme = "README.md"
 keywords = ["no_std", "no-std", "data", "average", "algorithm"]
-categories = ["embedded", "no-std", "algorithm"]
+categories = ["embedded", "no-std", "algorithms", "mathematics"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
