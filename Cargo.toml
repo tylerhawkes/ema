@@ -1,0 +1,26 @@
+[package]
+name = "ema"
+version = "0.1.0"
+authors = ["Tyler Hawkes <tyler.hawkes@gmail.com>"]
+edition = "2018"
+description = "Library for using exponential moving averages"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/tylerhawkes/ema"
+documentation = "https://docs.rs/ema"
+readme = "README.md"
+keywords = ["no_std", "no-std", "data", "average", "algorithm"]
+categories = ["embedded", "no-std", "algorithm"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+num-traits = "0.2"
+ordered-float = "2.5"
+
+[features]
+
+[dev-dependencies]
+# Need master features since 1.7 for the Float implementations
+half = { version = "1.7", features = ["num-traits"], git = "https://github.com/starkat99/half-rs.git", rev = "9fa52469bc8cf0b5db2768bdde5dcd183497ad9d" }
+
+[package.metadata.docs.rs]
+all-features = true
