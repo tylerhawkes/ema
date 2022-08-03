@@ -90,7 +90,7 @@ where
     self.mean = new_mean;
     self.variance = new_variance;
   }
-  /// Tries to accumulate raw flaot values.
+  /// Tries to accumulate raw float values.
   /// # Errors
   /// Fails if `value` or `recent_weight` are NaN
   pub fn try_accumulate(&mut self, value: F, recent_weight: F) -> Result<(), FloatIsNan> {
